@@ -45,6 +45,9 @@ class RestXmlProtocol {
     dynamic payload,
     String resultWrapper,
   }) async {
+    if(_credentials.sessionToken.isNotEmpty){
+      headers['x-amz-security-token'] = _credentials.sessionToken;
+    }
     final rq = _buildRequest(method, requestUri, queryParams, payload, headers);
     final rs = await _client.send(rq);
 
