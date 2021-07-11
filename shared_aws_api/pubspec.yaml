@@ -9,7 +9,7 @@ environment:
 
 dependencies:
   crypto: ^3.0.1
-  http: ^0.12.1
+  http: ^0.13.3
   json_annotation: ^4.0.1
   meta: ^1.1.8
   xml: ^4.2.0
