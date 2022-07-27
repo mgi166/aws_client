@@ -12,7 +12,7 @@ environment:
 dependencies:
   shared_aws_api:
     git:
-      url: git://github.com/azihsoyn/aws_client.git
+      url: https://github.com/azihsoyn/aws_client.git
       path: shared_aws_api
       ref: feature/fix_s3_sign
 
